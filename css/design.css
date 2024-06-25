@@ -1,0 +1,43 @@
+.fotoPerfil {
+  border: 5px solid #5847a6;
+    width: 20vw;
+    border-radius: 100%;
+}
+
+
+
+.Perfil {
+    padding-top: 50px;
+     text-align: center;
+    line-height: 0.5;
+}
+body {
+    background-color: #8074c4;
+  margin: 0;
+  font-family: "Times New Roman", Helvetica, sans-serif;
+    color: #f2f2f2;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
