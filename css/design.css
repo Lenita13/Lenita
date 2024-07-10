@@ -61,6 +61,7 @@ html {
 }
 
 .divPadrao {
+  width: 100%;
   padding: 20px;
   text-align: center;
   transition: top 0.5s;
@@ -100,4 +101,26 @@ hr {
   left: 0;
   bottom: 0;
   /*width: 100%;*/
+}
+
+.bigImage {
+  width: 50%;
+  height: 50%;
+}
+
+.smallImage {
+  width: 20%;
+  height: 20%;
+}
+
+.imageGrid {
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /*gap: 20px; !* Adjust the gap between images *!*/
+}
+
+.imageGrid img {
+  width: 60%; /* Make images fill their cell */
+  height: auto; /* Keep the aspect ratio */
 }
