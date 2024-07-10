@@ -24,12 +24,20 @@ body {
 }
 
 .topnav a {
+  /* Use a flexbox layout */
+  display: flex;
+
+  /* Make a horizontal flexbox (the default) */
+  flex-direction: row;
+
+  /* The important part: vertically center the items */
+  align-items: center;
   float: left;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
+  padding: 14px 26px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 44px;
 }
 
 .topnav a:hover {
@@ -40,4 +48,56 @@ body {
 .topnav a.active {
   background-color: #04AA6D;
   color: white;
+}
+/*///////////////////////////// CRIEI AGORA /////////////////////////*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+.largespace {
+  padding-bottom: 4rem;
+  padding-top: 4rem;
+}
+
+.divPadrao {
+  padding: 20px;
+  text-align: center;
+  transition: top 0.5s;
+}
+
+.mediumText {
+  font-size: 24px;
+}
+
+.sideImage {
+  width: 30%;
+}
+.sideText {
+  width: 70%;
+}
+
+.right{
+  float: right;
+}
+
+.left{
+  float: left;
+}
+
+hr {
+  width: 100%;
+  margin: 10px;
+  padding: 0;
+}
+
+.divFooter {
+  /*background-color: #333;*/
+  padding-top: 5rem;
+  color: white;
+  text-align: justify-all;
+  /*position: fixed;*/
+  left: 0;
+  bottom: 0;
+  /*width: 100%;*/
 }
