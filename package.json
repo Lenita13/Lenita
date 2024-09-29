@@ -1,5 +1,15 @@
 {
+  "name": "lenita-lemos-website",
+    "version": "1.0.0",
+    "description": "My personal website",
+    "main": "index.js",
+    "homepage": "https://lenitalemos.github.io/lenita-lemos-website",
   "devDependencies": {
     "tailwindcss": "^3.4.13"
-  }
+  },
+    "scripts": {
+        "build": "tailwindcss build src/styles.css -o dist/styles.css",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d dist"
+    }
 }
