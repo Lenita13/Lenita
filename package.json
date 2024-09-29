@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "description": "My personal website",
     "main": "index.js",
-    "homepage": "https://lenitalemos.github.io/lenita-lemos-website",
+    "homepage": "https://lenita13.github.io/lenita-lemos-website",
   "devDependencies": {
     "tailwindcss": "^3.4.13"
   },
