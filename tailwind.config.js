@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       backgroundColor: {
         'custom-purple': '#8e65c0',
+        'custom-blue': '#e6f0f2', // Blueish color
       },
       textColor: {
         'custom-purple': '#8e65c0',

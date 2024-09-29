@@ -474,7 +474,7 @@ dialog {
 }
 
 /*
-Prevent resizing text areas horizontally by default.
+Prevent resizing textareas horizontally by default.
 */
 
 textarea {
@@ -585,6 +585,10 @@ video {
   margin-left: 1rem;
 }
 
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
 .mt-2 {
   margin-top: 0.5rem;
 }
@@ -597,60 +601,20 @@ video {
   margin-top: 2rem;
 }
 
-.mt-10 {
-  margin-top: 2.5rem;
-}
-
-.mt-5 {
-  margin-top: 1.25rem;
-}
-
 .flex {
   display: flex;
-}
-
-.h-96 {
-  height: 24rem;
-}
-
-.h-10 {
-  height: 2.5rem;
-}
-
-.h-6 {
-  height: 1.5rem;
 }
 
 .h-12 {
   height: 3rem;
 }
 
-.h-1\/2 {
-  height: 50%;
+.h-96 {
+  height: 24rem;
 }
 
-.h-1\/5 {
-  height: 20%;
-}
-
-.h-1\/6 {
-  height: 16.666667%;
-}
-
-.h-9 {
-  height: 2.25rem;
-}
-
-.h-14 {
-  height: 3.5rem;
-}
-
-.h-20 {
-  height: 5rem;
-}
-
-.h-24 {
-  height: 6rem;
+.w-1\/2 {
+  width: 50%;
 }
 
 .w-1\/6 {
@@ -699,18 +663,26 @@ video {
   border-radius: 9999px;
 }
 
-.border-t-2 {
-  border-top-width: 2px;
+.rounded-lg {
+  border-radius: 0.5rem;
 }
 
-.border-gray-300 {
-  --tw-border-opacity: 1;
-  border-color: rgb(209 213 219 / var(--tw-border-opacity));
+.border-4 {
+  border-width: 4px;
+}
+
+.border-t-2 {
+  border-top-width: 2px;
 }
 
 .border-black {
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
+
+.bg-custom-blue {
+  --tw-bg-opacity: 1;
+  background-color: rgb(230 240 242 / var(--tw-bg-opacity));
 }
 
 .bg-custom-purple {
@@ -723,26 +695,17 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-gray-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(75 85 99 / var(--tw-bg-opacity));
-}
-
 .bg-opacity-80 {
   --tw-bg-opacity: 0.8;
 }
 
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .p-4 {
   padding: 1rem;
-}
-
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-.pl-6 {
-  padding-left: 1.5rem;
 }
 
 .pr-6 {
@@ -751,18 +714,6 @@ video {
 
 .pt-20 {
   padding-top: 5rem;
-}
-
-.pl-3 {
-  padding-left: 0.75rem;
-}
-
-.pr-2 {
-  padding-right: 0.5rem;
-}
-
-.pr-4 {
-  padding-right: 1rem;
 }
 
 .text-left {
@@ -797,11 +748,6 @@ video {
   line-height: 1.75rem;
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
 .font-bold {
   font-weight: 700;
 }
@@ -814,6 +760,16 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.transition-transform {
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.duration-300 {
+  transition-duration: 300ms;
 }
 
 .hover\:scale-110:hover {
