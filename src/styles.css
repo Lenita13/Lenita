@@ -1,0 +1,12 @@
+#image-track > .image {
+    width: 40vmin;
+    height: 56vmin;
+    object-fit: cover;
+    object-position: center;
+    margin-bottom: 20rem; /* Ajuste o valor conforme necessário */
+}
+
+#image-track {
+    gap: 10rem;
+    position: absolute;
+}

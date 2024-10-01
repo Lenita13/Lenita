@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="output.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="icon" href="www/Logotipo.ico" type="image/x-icon">
     <style>
@@ -14,114 +15,163 @@
     <title>Lenita Lemos Diniz</title>
 </head>
 <body class="bg-custom-purple text-black">
-    <header class="w-full flex justify-between items-center p-4 bg-white bg-opacity-80 text-4xl" style="color: #2daae1;">
-        <div class="text-left">
-            <a href="#" class="font-bold ml-4">
-                <img src="www/Logotipopreto.png" alt="Logo" class="h-12" style="margin-top: -2rem;">
-            </a>
-        </div>
-        <nav class="text-right space-x-4">
-            <a href="#SobreMim" class="font-bold pr-6 hover:text-opacity-10" style="color: #2664ab;">Sobre Mim</a>
-            <a href="#Experiencias" class="font-bold pr-6 hover:text-opacity-10" style="color: #2b89c8;">Experiencia</a>
-            <a href="#contacts" class="font-bold pr-6 hover:text-opacity-10" style="color: #2daae1;">Meus contatos</a>
-        </nav>
-    </header>
+    <body class="bg-custom-purple text-black">
+        <header class="w-full flex justify-between items-center p-2 sm:p-4 bg-white bg-opacity-80 text-2xl sm:text-4xl" style="color: #2daae1;">
+            <div class="text-left">
+                <a href="#" class="font-bold ml-2 sm:ml-4">
+                    <img src="www/Logotipopreto.png" alt="Logo" class="h-8 sm:h-12" style="margin-top: -2rem;">
+                </a>
+            </div>
+            <div class="sm:hidden">
+                <button id="menu-button" class="text-2xl focus:outline-none">
+                    &#9776; <!-- Ícone de menu -->
+                </button>
+            </div>
+            <nav id="menu" class="hidden sm:flex flex-col sm:flex-row text-right space-y-2 sm:space-y-0 sm:space-x-4 mt-2 sm:mt-0">
+                <div class="sm:hidden">
+                    <button id="menu-button2" class="text-2xl focus:outline-none">
+                        &#9776; <!-- Ícone de menu -->
+                    </button>
+                </div>
+                <a href="#SobreMim" class="block sm:inline font-bold pr-3 sm:pr-6 hover:text-opacity-10" style="color: #2664ab;">Sobre Mim</a>
+                <a href="#Experiencias" class="block sm:inline font-bold pr-3 sm:pr-6 hover:text-opacity-10" style="color: #2b89c8;">Experiencia</a>
+                <a href="#contacts" class="block sm:inline font-bold pr-3 sm:pr-6 hover:text-opacity-10" style="color: #2daae1;">Meus contatos</a>
+            </nav>
+        </header>
+        
+        <script>
+            document.getElementById('menu-button').addEventListener('click', function() {
+                var menu = document.getElementById('menu');
+                var menuButton = document.getElementById('menu-button');
+                if (menu.classList.contains('hidden')) {
+                    menu.classList.remove('hidden');
+                    menuButton.classList.add('hidden');
+                } else {
+                    menu.classList.add('hidden');
+                }
+            });
+        </script>
+        <script>
+            document.getElementById('menu-button2').addEventListener('click', function() {
+                var menu = document.getElementById('menu');
+                var menuButton = document.getElementById('menu-button');
+                if (menu.classList.contains('hidden')) {
+                    menu.classList.remove('hidden');
+                } else {
+                    menu.classList.add('hidden');
+                    menuButton.classList.remove('hidden');
+                }
+            });
+        </script>
+        <br><br>
+        <div class="flex flex-col items-center mt-8">
+            <h1 class="text-3xl sm:text-5xl font-bold text-white">Lenita Lemos Diniz</h1>
+            <h2 class="text-2xl sm:text-4xl text-white mt-2">Designer Gráfico</h2>
+            <br><br>
+        <img src="www/LenitaImage.jpg" alt="Lenita Lemos" class="rounded-full w-48 sm:w-96 h-48 sm:h-96 mt-4 border-4 border-white">
+    </div>
     <br><br>
-    <div class="flex flex-col items-center mt-8">
-        <h1 class="text-5xl font-bold text-white">Lenita Lemos Diniz</h1>
-        <h2 class="text-4xl text-white mt-2">Designer Gráfico</h2>
+    <section class="p-2 sm:p-4 mt-4 text-white">
+        <h1 class="text-3xl sm:text-5xl font-bold text-white text-center" id="SobreMim">Sobre Mim</h1>
         <br><br>
-        <img src="www/LenitaImage.jpg" alt="Lenita Lemos" class="rounded-full w-96 h-96 mt-4 border-4 border-white">
-    </div><br><br>
-    <section class="p-4 mt-4 text-white">
-        <h1 class="text-5xl font-bold text-white text-center" id="SobreMim">Sobre Mim</h1>
-        <br><br>
-        <p class="text-center text-2xl mx-16" style="text-indent: 1em;">
+        <p class="text-lg sm:text-2xl mx-4 sm:mx-16" style="text-indent: 1em;">
             Meu nome é Lenita Lemoz Diniz, tenho 19 anos e sou formada em Design Gráfico pelo Instituto Mix Gonzaga, em Santos, onde finalizei meu curso em fevereiro de 2023. Sou uma pessoa criativa, altruísta e determinada, sempre em busca de aprimorar minhas habilidades e de contribuir positivamente para o ambiente em que estou inserida.
         </p>
-        <p class="text-center text-2xl mx-16 mt-4" style="text-indent: 1em;">
+        <p class="text-lg sm:text-2xl mx-4 sm:mx-16 mt-4" style="text-indent: 1em;">
             Tenho o objetivo de me desenvolver profissionalmente, aplicando na prática os conhecimentos que adquiri até aqui. Valorizo muito o trabalho em equipe e acredito que colaborar com outras pessoas é essencial tanto para o meu crescimento quanto para a qualidade dos projetos em que estou envolvida.
         </p>
-        <p class="text-center text-2xl mx-16 mt-4" style="text-indent: 1em;">
+        <p class="text-lg sm:text-2xl mx-4 sm:mx-16 mt-4" style="text-indent: 1em;">
             Atualmente, possuo nível intermediário de inglês, o que me permite me comunicar em ambientes multiculturais, além de me adaptar a novas oportunidades e desafios. Estou aberta a aprender, evoluir e dar o meu melhor em cada tarefa.
         </p>
-    </section><br><br>
-    <section class="p-4 mt-4 text-black bg-custom-blue">
-        <h1 class="text-5xl font-bold text-custom-purple text-center">Projects</h1>
-        <br><br>
-        <div class="flex flex-wrap justify-center">
-            <div class="p-4 w-1/2">
-                <img src="www/project1.jpg" alt="Project 1" class="rounded-lg w-128 h-96 mx-auto border-4 border-custom-purple hover:scale-110 transition-transform duration-300">
-            </div>
-            <div class="p-4 w-1/2">
-                <img src="www/project2.jpg" alt="Project 2" class="rounded-lg w-128 h-96 mx-auto border-4 border-custom-purple hover:scale-110 transition-transform duration-300">
-            </div>
-            <div class="p-4 w-1/2">
-                <img src="www/project3.jpg" alt="Project 3" class="rounded-lg w-128 h-96 mx-auto border-4 border-custom-purple hover:scale-110 transition-transform duration-300">
-            </div>
-            <div class="p-4 w-1/2">
-                <img src="www/project4.jpg" alt="Project 4" class="rounded-lg w-128 h-96 mx-auto border-4 border-custom-purple hover:scale-110 transition-transform duration-300">
-            </div>
-        </div>
     </section>
+    <br><br>
     <section class="w-full bg-white text-custom-purple">
         <br>
-        <div class="p-4 mt-10">
-            <h1 class="text-5xl font-bold text-center" id="Experiencias">Experiências</h1>
+        <div class="p-2 sm:p-4 mt-10">
+            <h1 class="text-3xl sm:text-5xl font-bold text-custom-purple text-center"" id="Experiencias">Experiências</h1>
             <br><br>
             <div class="mt-4">
-                <p class="text-2xl mx-16 font-bold">Trabalho de meio período:</p>
-                <p class="text-2xl mx-16">Atuo em recreações comemorativas, envolvendo fantasias e animação infantil em aniversários e eventos festivos, onde sou responsável por manter o clima de diversão e entretenimento para as crianças.</p>
+                <p class="text-center text-lg sm:text-2xl mx-4 sm:mx-16 mt-4 font-bold">Trabalho de meio período:</p>
+                <p class="text-center text-lg sm:text-2xl mx-4 sm:mx-16 mt-4">Atuo em recreações comemorativas, envolvendo fantasias e animação infantil em aniversários e eventos festivos, onde sou responsável por manter o clima de diversão e entretenimento para as crianças.</p>
             </div>
             <br><br>
             <div class="mt-4">
-                <p class="text-2xl mx-16 font-bold">Desfiles e editoriais:</p>
-                <p class="text-2xl mx-16">Participei de diversos jobs em desfiles, editoriais de fotos e concursos de Miss. Conquistei os títulos de Miss Santos nos anos de 2020 e 2021, o que me proporcionou experiência em eventos de grande visibilidade e contato com diferentes áreas criativas.</p>
+                <p class="text-center text-lg sm:text-2xl mx-4 sm:mx-16 mt-4 font-bold">Desfiles e editoriais:</p>
+                <p class="text-center text-lg sm:text-2xl mx-4 sm:mx-16 mt-4">Participei de diversos jobs em desfiles, editoriais de fotos e concursos de Miss. Conquistei os títulos de Miss Santos nos anos de 2020 e 2021, o que me proporcionou experiência em eventos de grande visibilidade e contato com diferentes áreas criativas.</p>
+            </div>
+            <br><br>
+        </div>
+        <hr class="border-t-2 border-custom-purple my-4">
+        <div class="p-2 sm:p-4 mt-5">
+            <h1 class="text-3xl sm:text-5xl font-bold text-custom-purple text-center"" id="Cursos">Cursos</h1>
+            <br><br>
+            <div class="mt-4">
+                <p class="text-center text-lg sm:text-2xl mx-4 sm:mx-16 mt-4 font-bold">Curso: Design Gráfico no Instituto Mix Gonzaga em Santos:</p>
+                <p class="text-center text-lg sm:text-2xl mx-4 sm:mx-16 mt-4">O curso de Design Gráfico com duração de 1 ano, u uma formação completa nas áreas fundamentais do design. O conteúdo abrange desde os princípios básicos de design gráfico e teoria das cores, até o aprendizado prático de ferramentas e linguagens como HTML, CSS, JavaScript e frameworks. Além disso, o curso foca na criação e montagem de páginas web, proporcionando uma visão ampla das aplicações do design no ambiente digital.</p>
             </div>
             <br><br><br><br>
         </div>
     </section>
-    <footer class="text-black bg-white p-4" id="contacts">
+    <section class="p-2 sm:p-4 text-black bg-custom-blue">
+        <br><br>
+        <h1 class="text-3xl sm:text-5xl font-bold text-custom-purple text-center">Projects</h1>
+        <br><br>
+        <p class="text-center text-lg sm:text-2xl mx-4 sm:mx-16 mt-4" style="text-indent: 1em;">
+            Apresento uma seleção dos meus projetos de design que refletem minha versatilidade e criatividade em diferentes áreas. Desde a criação de logos que traduzem a identidade de marcas, até a edição de imagens e o desenvolvimento de posters e capas que capturam a essência de cada proposta visual. Também incluo folhetos de vendas projetados para comunicar de forma clara e atraente, além de painéis criativos de brainstorming, onde as ideias iniciais ganham forma e direção para futuras criações.
+        </p>
+        <br>
+        <div class="flex flex-wrap justify-center">
+            <img src="www/Atv3.Cartaz-de-Jazz.png" alt="Project 1" class="image rounded-lg w-64 sm:w-128 h-48 sm:h-96 mx-auto hover:scale-110 transition-transform duration-300">
+            <img src="www/Atv6.Cartaz-da-Adidas.png" alt="Project 2" class="image rounded-lg w-64 sm:w-128 h-48 sm:h-96 mx-auto hover:scale-110 transition-transform duration-300">
+            <img src="www/Folha Seca em pedra irregular.png" alt="Project 3" class="image rounded-lg w-64 sm:w-128 h-48 sm:h-96 mx-auto hover:scale-110 transition-transform duration-300">
+            <img src="www/Folha Seca na terra mexida.png" alt="Project 4" class="image rounded-lg w-64 sm:w-128 h-48 sm:h-96 mx-auto hover:scale-110 transition-transform duration-300">
+            <img src="www/Infográfico-sobre-IA.png" alt="Project 5" class="image rounded-lg w-64 sm:w-128 h-48 sm:h-96 mx-auto hover:scale-110 transition-transform duration-300">
+            <img src="www/b0dbc4e163404513cecf3c0ce6f1028e2ETLf1pEhkcs7kMF-0.png" alt="Project 6" class="image rounded-lg w-64 sm:w-128 h-48 sm:h-96 mx-auto border-4 border-custom-purple hover:scale-110 transition-transform duration-300">
+            <img src="www/RABI35C.png" alt="Project 7" class="image rounded-lg w-64 sm:w-128 h-48 sm:h-96 mx-auto border-4 border-custom-purple hover:scale-110 transition-transform duration-300">
+            <img src="www/b0dbc4e163404513cecf3c0ce6f1028e2ETLf1pEhkcs7kMF-1.png" alt="Project 8" class="image rounded-lg w-64 sm:w-128 h-48 sm:h-96 mx-auto border-4 border-custom-purple hover:scale-110 transition-transform duration-300">
+        </div>
+    </section>
+    <footer class="text-black bg-white p-2 sm:p-4" id="contacts">
         <hr class="border-t-2 border-custom-purple my-4">
         <br>
         <div class="flex flex-wrap justify-around text-custom-purple">
             <!-- Footer Location -->
             <div class="w-full md:w-1/3 text-center mb-4 md:mb-0">
-                <h4 class="text-4xl font-bold mb-2">Localização</h4>
-                <p class="text-xl">
+                <h4 class="text-2xl sm:text-4xl font-bold mb-2">Localização</h4>
+                <p class="text-base sm:text-xl">
                     Av. Afonso Penna 104, Santos - SP
                     <br/>
                     Boqueirão, 11020-000
                     <br>
-                    Telefone: (13) 99804-6457
+                    Telefone: +55 13 99804-6457
                 </p>
             </div>
             <!-- Footer Social Icons -->
             <div class="w-full md:w-1/3 text-center mb-4 md:mb-0">
-                <h4 class="text-4xl font-bold">Redes Sociais</h4><br><br>
-                <div class="mt=-4 justify-center space-x-4">
+                <h4 class="text-2xl sm:text-4xl font-bold">Redes Sociais</h4><br><br>
+                <div class="mt-4 justify-center space-x-2 sm:space-x-4">
                     <a href="https://www.instagram.com/_lelezin_" title="Instagram" target="_blank" class="hover:scale-110">
-                        <i class="fab fa-instagram text-4xl"></i>
+                        <i class="fab fa-instagram text-2xl sm:text-4xl"></i>
                     </a>
                     <a href="https://www.linkedin.com/in/lenita-lemos-59407b276/" title="LinkedIn" target="_blank" class="hover:scale-110">
-                        <i class="fab fa-linkedin-in text-4xl"></i>
+                        <i class="fab fa-linkedin-in text-2xl sm:text-4xl"></i>
                     </a>
-                    <a href="https://t.me/+55 13 99697 8999" title="Telegram" target="_blank" class="hover:scale-110">
-                        <i class="fab fa-telegram-plane text-4xl"></i>
+                    <a href="https://t.me/lenitalemos" title="Telegram" target="_blank" class="hover:scale-110">
+                        <i class="fab fa-telegram-plane text-2xl sm:text-4xl"></i>
                     </a>
                     <a href="mailto:lenitalemos08@gmail.com" title="Gmail" target="_blank" class="hover:scale-110">
-                        <i class="fa fa-envelope text-4xl"></i>
+                        <i class="fa fa-envelope text-2xl sm:text-4xl"></i>
                     </a>
-                    <a href="https://wa.me/5513996978999" title="WhatsApp" target="_blank" class="hover:scale-110">
-                        <i class="fab fa-whatsapp text-4xl"></i>
+                    <a href="https://wa.me/+5513998046457" title="WhatsApp" target="_blank" class="hover:scale-110">
+                        <i class="fab fa-whatsapp text-2xl sm:text-4xl"></i>
                     </a>
                 </div>
             </div>
             <!-- Footer QR Code -->
             <div class="w-full md:w-1/3 text-center">
-                <h4 class="text-4xl font-bold mb-2">Beacons</h4>
+                <h4 class="text-2xl sm:text-4xl font-bold mb-2">Beacons</h4>
                 <a href="https://beacons.ai/lenita.lemos" target="_blank" class="hover:scale-110">
-                    <img src="www/qrCodeBeaconBlack.png" alt="Beacons" title="Beacons - Lenita" class="w-1/6 mx-auto">
+                    <img src="www/qrCodeBeaconBlack.png" alt="Beacons" title="Beacons - Lenita" class="w-1/3 sm:w-1/6 mx-auto">
                 </a>
             </div>
         </div>
