@@ -1,4 +1,8 @@
 # Lenita Lemos Website
+## Website's link:
+
+https://lenita13.github.io/Lenita/
+
 
 ## Description
 This project is a personal website for Lenita Lemos. It includes links to various social media profiles and contact methods. The website is built using HTML, CSS, and JavaScript, and it utilizes Tailwind CSS for styling. The project is set up to run on a local development server using npm.
