@@ -60,8 +60,9 @@ const handleOnMove = e => {
 
     track.style.transform = `translate(${nextPercentage}%, 0%)`;
 
+    const objectPositionValue = window.innerWidth <= 768 ? 150 : 100;
     for(const image of track.getElementsByClassName("image")) {
-        image.style.objectPosition = `${100 + nextPercentage}% center`;
+        image.style.objectPosition = `${objectPositionValue + nextPercentage}% center`;
     }
 };
 
