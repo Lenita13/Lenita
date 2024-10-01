@@ -38,31 +38,6 @@
                 <a href="#contacts" class="block sm:inline font-bold pr-3 sm:pr-6 hover:text-opacity-10" style="color: #2daae1;">Meus contatos</a>
             </nav>
         </header>
-        
-        <script>
-            document.getElementById('menu-button').addEventListener('click', function() {
-                var menu = document.getElementById('menu');
-                var menuButton = document.getElementById('menu-button');
-                if (menu.classList.contains('hidden')) {
-                    menu.classList.remove('hidden');
-                    menuButton.classList.add('hidden');
-                } else {
-                    menu.classList.add('hidden');
-                }
-            });
-        </script>
-        <script>
-            document.getElementById('menu-button2').addEventListener('click', function() {
-                var menu = document.getElementById('menu');
-                var menuButton = document.getElementById('menu-button');
-                if (menu.classList.contains('hidden')) {
-                    menu.classList.remove('hidden');
-                } else {
-                    menu.classList.add('hidden');
-                    menuButton.classList.remove('hidden');
-                }
-            });
-        </script>
         <br><br>
         <div class="flex flex-col items-center mt-8">
             <h1 class="text-3xl sm:text-5xl font-bold text-white">Lenita Lemos Diniz</h1>
@@ -178,5 +153,9 @@
         <br>
     </footer>
     <script src="smoothScroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
