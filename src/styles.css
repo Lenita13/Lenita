@@ -1,12 +1,16 @@
-#image-track > .image {
-    width: 40vmin;
-    height: 56vmin;
-    object-fit: cover;
-    object-position: center;
-    margin-bottom: 20rem; /* Ajuste o valor conforme necessário */
+#image-track {
+  display: flex;
+  gap: 4vmin;
+  position: relative;
+  left: 5%;
+  top: 0%;
+  transform: translate(0%, 0%); 
+  user-select: none; /* -- Prevent image highlighting -- */
 }
 
-#image-track {
-    gap: 10rem;
-    position: absolute;
+#image-track > .image {
+  width: 40vmin;
+  height: 56vmin;
+  object-fit: cover;
+  object-position: 100% center;
 }
